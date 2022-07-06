@@ -1,9 +1,12 @@
 import Image from 'next/image';
+import Logo from './/../public/assets/stephorc-logo.png'
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FiSun } from 'react-icons/fi';
+import { FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,11 +16,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
-      <div className='flex justify-between items-center w-full h-full px-2 md:pr-0 md:pl-6 2xl:px-16'>
+    <div className='fixed w-full h-20 shadow-xl bg-[#ecf0f3] z-[100]'>
+      <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
         <Image
-          src='/../public/assets/stephorc-logo.png'
-          alt='/'
+          src={Logo}
+          alt='Steph O.'
           width='80'
           height='52.04'
           className='cursor-pointer hover:rotate-180 ease-in duration-200'
@@ -25,25 +28,32 @@ const Navbar = () => {
         <div>
           <ul className='hidden h-20 md:flex'>
             <Link href='/'>
-              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>Home</li>
+              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 focus:bg-gray-500/5'>Home</li>
             </Link>
             <Link href='/'>
-              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>About</li>
+              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>About</li>
             </Link>
             <Link href='/'>
-              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>Skills</li>
+              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Skills</li>
             </Link>
             <Link href='/'>
-              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>Projects</li>
+              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Projects</li>
             </Link>
             <Link href='/'>
-              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>Contact</li>
+              <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Contact</li>
             </Link>
           </ul>
           <div onClick={handleNav} className='cursor-pointer hover:scale-105 hover:text-blue-500 ease-in duration-200 md:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
+        {/* className={darkMode ? 'flex' : 'hidden'} */}
+        <div>
+          <FaMoon size={25} />
+        </div>
+        {/* <div className={darkMode ? 'hidden' : 'flex'}>
+          <FiSun size={25} />
+        </div> */}
       </div>
 
       <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70 md:hidden' : ''}>
@@ -55,8 +65,8 @@ const Navbar = () => {
           <div>
             <div className='flex justify-between items-center'>
               <Image
-                src='/../public/assets/stephorc-logo.png'
-                alt='/'
+                src={Logo}
+                alt='Steph O.'
                 width='80'
                 height='52.04'
               />
