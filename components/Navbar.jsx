@@ -20,6 +20,7 @@ const Navbar = () => {
           alt='/'
           width='80'
           height='52.04'
+          className='cursor-pointer hover:rotate-180 ease-in duration-200'
         />
         <div>
           <ul className='hidden h-20 md:flex'>
@@ -39,7 +40,7 @@ const Navbar = () => {
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 hover:bg-gray-500/5'>Contact</li>
             </Link>
           </ul>
-          <div onClick={handleNav} className='hover:scale-105 hover:text-blue-500 ease-in duration-200 md:hidden'>
+          <div onClick={handleNav} className='cursor-pointer hover:scale-105 hover:text-blue-500 ease-in duration-200 md:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
