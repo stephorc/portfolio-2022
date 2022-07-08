@@ -29,7 +29,7 @@ const About = () => {
             I have 3+ years of experience in teaching and 2+ years of experience in marketing, graphic design, and software development.
           </p> */}
           <Link href='/'>
-            <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my latest projects.</p>
+            <p className='py-2 text-blue-500 underline cursor-pointer hover:text-red-500'>Check out some of my latest projects.</p>
           </Link>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>

@@ -21,10 +21,10 @@ const Hero = () => {
           <p className='uppercase text-sm tracking-widest text-gray-600'>
             Let&#39;s build a more beautiful web, together
           </p>
-          <h1 className='py-4 text-gray-700'>Hello, I&#39;m <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500 to-yellow-400'>Steph</span></h1>
+          <h1 className='py-4 text-gray-700'>Hello, I&#39;m <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500'>Steph</span></h1>
           <h2 className='flex flex-row'>
             <Typed
-              className='py-2 m-auto text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500 to-yellow-400'
+              className='py-2 m-auto text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-500'
               strings={['A Frontend Dev.', 'An Any% Dead Space Speedrunner.', 'A Dog Mom.', 'A Sci-fi Writer.']}
               typeSpeed={120}
               backSpeed={120}
@@ -46,7 +46,7 @@ const Hero = () => {
             <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:text-yellow-500 ease-in duration-200'>
               <AiOutlineMail size={20} />
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:text-pink-500 ease-in duration-200'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:text-red-500 ease-in duration-200'>
               <BsFillPersonLinesFill size={20} />
             </div>
            </div>

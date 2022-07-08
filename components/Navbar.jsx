@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* className={darkMode ? 'flex' : 'hidden'} */}
-        <div>
+        <div className='hidden md:flex'>
           <FaMoon size={25} />
         </div>
         {/* <div className={darkMode ? 'hidden' : 'flex'}>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 width='80'
                 height='52.04'
               />
-              <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-pink-500 ease-in duration-200'>
+              <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-red-500 ease-in duration-200'>
                 <AiOutlineClose size={20} />
               </div>
             </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-yellow-500 ease-in duration-200'>
                     <AiOutlineMail />
                   </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-pink-500 ease-in duration-200'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-red-500 ease-in duration-200'>
                     <BsFillPersonLinesFill />
                   </div>
                 </div>
