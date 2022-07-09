@@ -18,26 +18,34 @@ const Projects = () => {
             title='Netflix UI Clone'
             backgroundImg={NetflixClone}
             projectUrl='/Netflix-Clone-stephorc-github'
+            tech='TailwindCSS, ReactJs, &amp; Firebase'
+            ghub='https://github.com/stephorc/react-tailwind-netflix'
           />
           <ProjectItem
             title='Hosted Landing Page'
             backgroundImg={Hosted}
             projectUrl='/Hosted-stephorc-github'
+            tech='TailwindCSS &amp; Vanilla JavaScript'
+            ghub='https://github.com/stephorc/booking-site-landing'
           />
           <ProjectItem
             title='Manage Landing Page'
             backgroundImg={Manage}
             projectUrl='/Manage-Landing-stephorc-github'
+            tech='TailwindCSS &amp; Vanilla JavaScript'
+            ghub='https://github.com/stephorc/tailwind-manage-landing'
           />
           <ProjectItem
             title='Huddle Landing Page'
             backgroundImg={Huddle}
             projectUrl='/Huddle-Landing-stephorc-github'
+            tech='HTML/CSS &amp; Vanilla JavaScript'
+            ghub='https://github.com/stephorc/huddle-landing-curved'
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Projects;

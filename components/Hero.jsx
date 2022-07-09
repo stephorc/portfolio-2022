@@ -49,11 +49,11 @@ const Hero = () => {
             <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:text-red-500 ease-in duration-200'>
               <BsFillPersonLinesFill size={20} />
             </div>
-           </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;
