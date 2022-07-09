@@ -6,7 +6,7 @@ import Typed from 'react-typed';
 
 const Hero = () => {
   return (
-    <div id='Home' className='w-full h-screen text-center'>
+    <div id='Hero' className='w-full h-full text-center pt-44 pb-16'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           {/* Or?

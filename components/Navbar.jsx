@@ -27,19 +27,19 @@ const Navbar = () => {
         />
         <div>
           <ul className='hidden h-20 md:flex'>
-            <Link href='/'>
+            <Link href='#Hero'>
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 focus:bg-gray-500/5'>Home</li>
             </Link>
-            <Link href='/'>
+            <Link href='#About'>
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>About</li>
             </Link>
-            <Link href='/'>
+            <Link href='#Skills'>
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Skills</li>
             </Link>
-            <Link href='/'>
+            <Link href='#Projects'>
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Projects</li>
             </Link>
-            <Link href='/'>
+            <Link href='#Contact'>
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5'>Contact</li>
             </Link>
           </ul>
@@ -76,19 +76,19 @@ const Navbar = () => {
             </div>
             <div className='py-12 flex flex-col'>
               <ul className='uppercase'>
-                <Link href='/'>
+                <Link href='#Hero'>
                   <li className='py-6 text-sm hover:bg-gray-200 rounded-md hover:font-bold ease-in duration-200'>Home</li>
                 </Link>
-                <Link href='/'>
+                <Link href='#About'>
                   <li className='py-6 text-sm hover:bg-gray-200 rounded-md hover:font-bold ease-in duration-200'>About</li>
                 </Link>
-                <Link href='/'>
+                <Link href='#Skills'>
                   <li className='py-6 text-sm hover:bg-gray-200 rounded-md hover:font-bold ease-in duration-200'>Skills</li>
                 </Link>
-                <Link href='/'>
+                <Link href='#Projects'>
                   <li className='py-6 text-sm hover:bg-gray-200 rounded-md hover:font-bold ease-in duration-200'>Projects</li>
                 </Link>
-                <Link href='/'>
+                <Link href='#Contact'>
                   <li className='py-6 text-sm hover:bg-gray-200 rounded-md hover:font-bold ease-in duration-200'>Contact</li>
                 </Link>
               </ul>
