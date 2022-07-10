@@ -18,6 +18,7 @@ import Github from './/../public/assets/skills/github.png';
 import AdobeIll from './/../public/assets/skills/adobeill.png';
 // import AdobeInd from './/../public/assets/skills/adobeind.png';
 import GoogleAds from './/../public/assets/skills/googleads.png';
+import SkillItem from './SkillItem';
 
 const Skills = () => {
   return (
@@ -27,274 +28,88 @@ const Skills = () => {
         <h2 className='py-4'>Tech &amp; Languages</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Html}
-                  alt='HTML'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>HTML</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={Html}
+              title='HTML'
+              alt='HTML'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Css}
-                  alt='CSS'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>CSS</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={Css}
+              title='CSS'
+              alt='CSS'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Javascript}
-                  alt='JavaScript'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>JavaScript</h3>
-              </div>
-            </div>
-          </div>
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Python}
-                  alt='Python'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Python</h3>
-              </div>
-            </div>
-          </div> */}
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={TailwindCSS}
-                  alt='TailwindCSS'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>TailwindCSS</h3>
-              </div>
-            </div>
-          </div>
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Sass}
-                  alt='Sass'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Sass</h3>
-              </div>
-            </div>
-          </div> */}
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={NodeJs}
-                  alt='NodeJs'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>NodeJs</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={Javascript}
+              title='JavaScript'
+              alt='JavaScript'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={ReactJs}
-                  alt='ReactJs'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>ReactJs</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={TailwindCSS}
+              title='TailwindCSS'
+              alt='TailwindCSS'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={NextJs}
-                  alt='NextJs'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>NextJs</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={NodeJs}
+              title='NodeJs'
+              alt='NodeJs'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Firebase}
-                  alt='Firebase'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Firebase</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={ReactJs}
+              title='ReactJs'
+              alt='ReactJs'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={MongoDB}
-                  alt='MongoDB'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>MongoDB</h3>
-              </div>
-            </div>
-          </div>
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Aws}
-                  alt='AWS'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>AWS</h3>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Mysql}
-                  alt='MySQL'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>MySQL</h3>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Wordpress}
-                  alt='WordPress'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>WordPress</h3>
-              </div>
-            </div>
-          </div> */}
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={Github}
-                  alt='Github'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Github</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={NextJs}
+              title='NextJs'
+              alt='NextJs'
+            />
           </div>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={AdobeIll}
-                  alt='Adobe Illustrator'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Adobe Illustrator</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={Firebase}
+              title='Firebase'
+              alt='Firebase'
+            />
           </div>
-          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={AdobeInd}
-                  alt='Adobe InDesign'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Adobe InDesign</h3>
-              </div>
-            </div>
-          </div> */}
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image
-                  src={GoogleAds}
-                  alt='Google Ads'
-                  width='64'
-                  height='64'
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>Google Ads</h3>
-              </div>
-            </div>
+            <SkillItem
+              skillImg={MongoDB}
+              title='MongoDB'
+              alt='MongoDB'
+            />
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+            <SkillItem
+              skillImg={Github}
+              title='Github'
+              alt='Github'
+            />
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+            <SkillItem
+              skillImg={AdobeIll}
+              title='Adobe Illustrator'
+              alt='Adobe Illustrator'
+            />
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+            <SkillItem
+              skillImg={GoogleAds}
+              title='Google Ads'
+              alt='Google Ads'
+            />
           </div>
         </div>
       </div>

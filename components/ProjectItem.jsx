@@ -8,7 +8,7 @@ const ProjectItem = ({title, backgroundImg, projectUrl, tech, ghub}) => {
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-tr from-blue-500 to-red-500'>
       <Image
         src={backgroundImg}
-        alt='Netflix UI Clone'
+        alt='Web app'
         className='rounded-xl group-hover:opacity-10 ease-in duration-100'
       />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

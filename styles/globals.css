@@ -11,6 +11,7 @@ html {
 
 @layer base {
   body {
+    /* dark:bg-slate-800 dark:text-[#ecf0f3] */
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide font-[Raleway];
   }
 
@@ -31,6 +32,6 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-green-400 to-blue-500 transition-all duration-[.2s] ease-in-out hover:from-pink-500 hover:to-yellow-500 text-white;
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-blue-500 to-red-500 hover:from-red-500 hover:to-blue-500 text-[#ecf0f3] duration-200 ease-in;
   }
 }
