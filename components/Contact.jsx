@@ -13,7 +13,7 @@ const Contact = () => {
     <div id='Contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
         <p className='text-xl tracking-widest uppercase text-blue-500'>Contact</p>
-        <h2 className='py-4'>Get In Touch</h2>
+        <h2 className='py-4 dark:text-gray-100'>Get In Touch</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
@@ -24,13 +24,13 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2>Steph O.</h2>
-                <p>Front-End Developer &amp; Designer</p>
-                <p>Got a cool web app idea you'd like help bringing to life? 
+                <h2 className='dark:text-gray-100'>Steph O.</h2>
+                <p className='dark:text-gray-200'>Front-End Developer &amp; Designer</p>
+                <p className='dark:text-gray-400'>Got a cool web app idea you'd like help bringing to life? 
                   Feel free to contact me (available for freelance or full-time positions) via the following form.</p>
               </div>
               <div>
-                <p className='pt-8 uppercase'>Connect With Me</p>
+                <p className='pt-8 uppercase text-blue-500'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 hover:text-blue-500 ease-in duration-200'>
                       <FaLinkedinIn size={20} />
@@ -54,26 +54,26 @@ const Contact = () => {
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
-                    <input type="text" className='border-2 rounded-lg p-3 flex border-gray-300' />
+                    <input type="text" className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-3 focus:outline-blue-500' />
                   </div>
                   <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Phone Number</label>
-                    <input type="tel" className='border-2 rounded-lg p-3 flex border-gray-300'/>
+                    <input type="tel" className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-3 focus:outline-red-500'/>
                   </div>
                 </div>
                 <div className='flex flex-col py-2'>
                   <label htmlFor="" className='uppercase text-sm py-2'>Email</label>
-                  <input type="email" className='border-2 rounded-lg p-3 flex border-gray-300' />
+                  <input type="email" className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-3 focus:outline-blue-500' />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label htmlFor="" className='uppercase text-sm py-2'>Subject</label>
-                  <input type="text" className='border-2 rounded-lg p-3 flex border-gray-300' />
+                  <input type="text" className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-3 focus:outline-red-500' />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label htmlFor="" className='uppercase text-sm py-2'>Message</label>
-                  <textarea rows='10' className='border-2 rounded-lg p-3 flex border-gray-300'></textarea>
+                  <textarea rows='10' className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-3 focus:outline-violet-500'></textarea>
                 </div>
-                <button className='w-full p-4 mt-4 text-gray-100'>Send</button>
+                <button className='w-full p-4 mt-4'>Send</button>
               </form>
             </div>
           </div>

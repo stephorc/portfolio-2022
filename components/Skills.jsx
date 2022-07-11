@@ -25,86 +25,86 @@ const Skills = () => {
     <div id='Skills' className='w-full lg:h-screen p-2 py-16'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-blue-500'>Skills</p>
-        <h2 className='py-4'>Tech &amp; Languages</h2>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+        <h2 className='py-4 dark:text-gray-100'>Tech &amp; Languages</h2>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={Html}
               title='HTML'
               alt='HTML'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={Css}
               title='CSS'
               alt='CSS'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={Javascript}
               title='JavaScript'
               alt='JavaScript'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={TailwindCSS}
               title='TailwindCSS'
               alt='TailwindCSS'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={NodeJs}
               title='NodeJs'
               alt='NodeJs'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={ReactJs}
               title='ReactJs'
               alt='ReactJs'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={NextJs}
               title='NextJs'
               alt='NextJs'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={Firebase}
               title='Firebase'
               alt='Firebase'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={MongoDB}
               title='MongoDB'
               alt='MongoDB'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={Github}
               title='Github'
               alt='Github'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={AdobeIll}
               title='Adobe Illustrator'
               alt='Adobe Illustrator'
             />
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-200'>
+          <div className='p-6 hover:scale-105 ease-in duration-200'>
             <SkillItem
               skillImg={GoogleAds}
               title='Google Ads'
