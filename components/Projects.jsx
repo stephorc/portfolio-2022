@@ -9,7 +9,7 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div id='Projects' className='w-full'>
+    <div id='Projects' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-blue-500'>Projects</p>
         <h2 className='py-4 dark:text-gray-100'>What I've Built / My Builds</h2>

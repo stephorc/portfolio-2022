@@ -22,7 +22,7 @@ import SkillItem from './SkillItem';
 
 const Skills = () => {
   return (
-    <div id='Skills' className='w-full lg:h-screen p-2 py-16'>
+    <div id='Skills' className='w-full p-2 py-16 lg:pb-44'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-blue-500'>Skills</p>
         <h2 className='py-4 dark:text-gray-100'>Tech &amp; Languages</h2>

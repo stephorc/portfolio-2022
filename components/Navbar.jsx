@@ -5,8 +5,7 @@ import React, { useState, useEffect, createContext } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FiSun } from 'react-icons/fi';
-import { FaMoon } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
 import useDarkMode from './useDarkMode';
 
 const Navbar = () => {
@@ -60,22 +59,38 @@ const Navbar = () => {
               <li className='p-8 text-sm uppercase border-b-4 border-transparent hover:border-gray-400 active:bg-gray-500/5 dark:hover:border-gray-500/20 dark:focus:bg-gray-300/10 dark:text-gray-300'>Contact</li>
             </Link>
             <div className='p-7 cursor-pointer' onClick={() => setTheme(colorTheme)}>
-              {colorTheme === "light" ? (
+              {colorTheme === 'light' ? (
+                <FaSun
+                  className='text-red-500 hover:text-blue-500 hidden md:flex'
+                  onClick={() => setTheme('light')}
+                  size={25}
+                />
+              ) : (
                 <FaMoon
                   className='text-blue-500 hover:text-red-500 hidden md:flex'
                   onClick={() => setTheme('dark')}
                   size={25}
-                />
-              ) : (
-                <FiSun
-                  className='text-red-500 hover:text-blue-500 hidden md:flex'
-                  onClick={() => setTheme('light')}
-                  size={25}
                 /> )}
             </div>
           </ul>
-          <div onClick={handleNav} className='cursor-pointer hover:scale-105 hover:text-blue-500 ease-in duration-200 md:hidden'>
-            <AiOutlineMenu size={25} />
+          <div className='flex items-center gap-3'>
+            <div onClick={handleNav} className='cursor-pointer hover:scale-105 hover:text-blue-500 ease-in duration-200 md:hidden'>
+              <AiOutlineMenu size={25} />
+            </div>
+            <div className='cursor-pointer' onClick={() => setTheme(colorTheme)}>
+              {colorTheme === 'light' ? (
+                <FaSun
+                  className='text-red-500 hover:text-blue-500 flex md:hidden'
+                  onClick={() => setTheme('light')}
+                  size={25}
+                />
+              ) : (
+                <FaMoon
+                  className='text-blue-500 hover:text-red-500 flex md:hidden'
+                  onClick={() => setTheme('dark')}
+                  size={25}
+                /> )}
+            </div>
           </div>
         </div>
       </div>
